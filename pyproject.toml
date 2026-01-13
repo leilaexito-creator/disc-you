@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "disc-you"
+version = "1.0.0"
+description = "DISC YOU - IA Coaching + Stripe Integration"
+
+[tool.vercel]
+framework = "fastapi"
+
+[tool.poetry.scripts]
+app = "api.index:app"
