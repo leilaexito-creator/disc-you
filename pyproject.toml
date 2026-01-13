@@ -6,9 +6,14 @@ build-backend = "setuptools.build_meta"
 name = "disc-you"
 version = "1.0.0"
 description = "DISC YOU - IA Coaching + Stripe Integration"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn==0.24.0",
+    "pydantic==2.5.0",
+    "pydantic-settings==2.1.0",
+    "stripe==7.4.0",
+    "python-dotenv==1.0.0"
+]
 
-[tool.vercel]
-framework = "fastapi"
-
-[tool.poetry.scripts]
+[project.scripts]
 app = "api.index:app"
